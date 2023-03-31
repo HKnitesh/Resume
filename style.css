@@ -1,52 +1,65 @@
-body{
-    background-color: #A5D7E8; 
+body {
+    background-color: #A5D7E8;
     font-family: 'Quicksand', sans-serif;
 }
-img{
+
+img {
     width: 95%;
     margin: auto 15px 10px 15px;
-    
+
 }
-h1{
+
+h1 {
     font-family: 'Alkatra', cursive;
     font-weight: 900;
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     text-align: left;
-   /* margin: 40px auto;font-family: 'Phudu', cursive; */
+    max-width: 60%;
+    /* margin: 40px auto;font-family: 'Phudu', cursive; */
 }
-h2{
+
+h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;
 }
-h3,h4{
+
+h3,
+h4 {
     font-size: 1.1rem;
     font-weight: 500;
 }
-h4{
+
+h4 {
     font-size: 1rem;
     /* font-weight: 500; */
 }
-h5{
+
+h5 {
     font-size: 0.8rem;
 }
-li,p{
+
+li,
+p {
     color: #5d5a5a;
     font-size: 0.85rem;
 }
-ul{
+
+ul {
     list-style: none;
 
 }
-.fa{
+
+.fa {
     color: #19376D;
 }
 
 /* Left */
-#left{
-    border-radius: 50px;
+#left {
+    border-radius: 75px;
     background-color: #B0DAFF;
     padding: 4%;
+    min-width: 33%;
 }
 
 
@@ -54,45 +67,74 @@ ul{
 
 
 /* Right */
-a{
+a {
     color: #002B5B;
     /* text-decoration: none; */
 }
-a:hover{
-     color: #B2A4FF;
-     font-size: 150%;
-     text-decoration: none;
+
+a:hover {
+    color: #B2A4FF;
+    font-size: 150%;
+    text-decoration: none;
 }
-#right{
-    border-radius: 50px;
+
+#right {
+    border-radius: 75px;
     background-color: #B9E9FC;
     padding: 4%;
+    max-width: 100%;
 }
-.right-hr{
+
+.right-hr {
     border-style: dotted;
-    border-color:rgb(95, 93, 93);
+    border-color: rgb(95, 93, 93);
     border-width: 0px 0px 8px;
     width: 8%;
     margin-top: 40px;
     margin-left: 375px;
     background-color: #A5D7E8;
 }
-.rightside-title{
+
+.rightside-title {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
 
 }
-.cont,.rightside-div{
+
+.cont,
+.rightside-div {
     margin: 2rem auto;
 }
-.social-media{
+
+.social-media {
     padding: 25px 15px;
     /* text-align: center; */
 }
-.btn{
+
+.btn {
     border: 3px solid #789fd8;
     position: relative;
     right: 3%;
     font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 3rem;
+        /* padding: 5%; */
+    }
+
+    .right-hr {
+        text-align: center;
+        border-style: dotted;
+        border-width: 0px 0px 8px;
+        width: 15%;
+        margin: 30px 150px;
+    }
+    #right,#left{
+        border-radius: 10%;
+        padding: 10%;
+    }
+
 }
